@@ -1,0 +1,7 @@
+{
+  "name": "auto-grow-bug",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
