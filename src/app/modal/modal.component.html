@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-card>
+      <ion-card-header>blabla</ion-card-header>
+      <ion-item>
+        <ion-textarea [autoGrow]="true" formControlName="textarea" placeholder="please enter" required></ion-textarea>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Some Stuff
+      </ion-card-header>
+      <ion-item *ngFor="let el of array; let i = index" detail>
+        <ion-label>
+          <h2>{{i}}</h2>
+          <p>
+            subtitle
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </form>
+</ion-content>
