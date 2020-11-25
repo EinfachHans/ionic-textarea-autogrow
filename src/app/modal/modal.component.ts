@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-modal',
@@ -8,16 +7,12 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 })
 export class ModalComponent implements OnInit {
 
-  form: FormGroup;
   array = new Array(50);
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.form = this.formBuilder.group({
-      textarea: new FormControl('test test')
-    });
   }
 
 }
